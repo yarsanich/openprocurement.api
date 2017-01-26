@@ -9,6 +9,7 @@ from requests.models import Response
 from base64 import b64encode
 from urllib import urlencode
 from types import FunctionType
+from email.header import Header
 
 from openprocurement.api.models import SANDBOX_MODE
 from openprocurement.api.utils import VERSION, SESSION, apply_data_patch
