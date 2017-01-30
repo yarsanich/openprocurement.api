@@ -204,7 +204,7 @@ test_features = [
 ]
 
 def create_classmethod(func):
-    return FunctionType(func.func_code, globals(),'test_' + func.func_name)
+    return FunctionType(func.func_code, func.func_globals, 'test_' + func.func_name)
 
 class PrefixedRequestClass(webtest.app.TestRequest):
 
