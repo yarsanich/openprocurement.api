@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 import unittest
 from email.header import Header
-from openprocurement.tender.openua.tests.base import BaseTenderUAContentWebTest
 
 def not_found(self):
     response = self.app.get('/tenders/some_id/documents', status=404)

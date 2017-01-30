@@ -3,7 +3,7 @@ import unittest
 from pkg_resources import get_distribution
 from copy import deepcopy
 from datetime import timedelta
-
+from openprocurement.api.tests.base import test_organization
 from openprocurement.api import ROUTE_PREFIX
 from openprocurement.api.models import Tender, get_now, CANT_DELETE_PERIOD_START_DATE_FROM, CPV_ITEMS_CLASS_FROM
 from uuid import uuid4
